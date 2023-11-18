@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.header_inner {
+    max-width: auto;
+    margin: auto;
+    padding: 10px 80px;
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between;
+}
+.title-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    color: black;
+}
+
+.gnav-list {
+    margin-right: 100px;
+    font-weight: bold;
+    display: flex;
+    
+}
+.gnav-list a {
+    font-size: 12px;
+    padding: 0 20px;
+    color: black;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 35vh;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 必要に応じて追加のスタイリング */
+}
+
+.section1-list {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 70px 0 10px;
+    text-align: center;
+}
+.section1-list2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: center;
+}
+.picture {
+    background-image: url('img/main-vsual-nontitle.png'); /* 画像の相対パスを指定 */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.section2 h2{
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 70px 0 10px; */
+    margin: 50px 0;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex .image {
+    width: 640px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.text {
+    margin: 0 400px 0 20px;
+    padding: 0;
+}
+.section3 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 70px 0 10px; */
+    margin: 50px 0;
+    text-align: center;
+}
+.section3_list {
+    display: flex;
+}
+.footer h2{
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 70px 0 10px; */
+    margin: 50px 0;
+    text-align: center;
+}

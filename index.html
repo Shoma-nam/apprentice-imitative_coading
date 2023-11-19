@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="header_inner">
-            <h1 class="title-logo">30DAYSトライアル</h1>
+        <div class="inner flex">
+            <h1 class="logo is-align-center">30DAYSトライアル</h1>
 
-            <nav class="gnav">
-                <ul class="gnav-list">
+            <nav class="gnav is-align-center">
+                <ul class="gnav_list">
                 <li><a href="#">デイトラとは</a></li>
                 <li><a href="#">コース一覧</a></li>   
                 <li><a href="#">お問い合わせ</a></li>
@@ -26,7 +26,7 @@
         <img src="img/main-vsual-nontitle.png" alt="背景画像">
         <div class="text-overlay">
             <section class="section1">
-                <ul class="section1-list">
+                <ul class="section1-list1">
                     <li>1日1題30日で</li>
                     <li>プロのWebエンジニアになろう！</li>
                 </ul>
@@ -39,48 +39,52 @@
     </div>
 
     <div class="container">
-        <section class="section-wrap">
-            <h2 class="section-title">デイトラとは</h2>
-            <p class="double-img"><img src="img/about.png" alt="2枚重ねた写真"></p>
+        <div class="inner">
+            <section class="section-wrap">
+                <h2 class="section-title">デイトラとは</h2>
+                <div class="flex is-between">
+                    <p class="double-img"><img src="img/about.png" alt="2枚重ねた写真"></p>
 
-            <div class="about-body">
-                <p>デイトラとは、無料で、迷わず、楽しく学べるプログラミング学
-                習アプリです。毎日設定された課題をこなしていくだけで、未経
-                験から30日でプログラミングスキルが身につきます。
-                1日1題30日でプロのWebエンジニアを目指しましょう！</p>
-            </div>
-        </section>
-        <section class="section-wrap">
-            <h2 class="section-title">コース一覧</h2>
+                    <div class="about-body">
+                        <p>デイトラとは、無料で、迷わず、楽しく学べるプログラミング学
+                        習アプリです。毎日設定された課題をこなしていくだけで、未経
+                        験から30日でプログラミングスキルが身につきます。
+                        1日1題30日でプロのWebエンジニアを目指しましょう！</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-wrap">
+                <h2 class="section-title">コース一覧</h2>
 
-            <div class="lineup-body">
-                <div class="lineup-list">
-                    <p><img src="img/web_first.png" alt="初級コース"></p>
-                    <p>HTML/CSS/Bootstrap</p>
+                <div class="lineup-body">
+                    <div class="lineup-list">
+                        <p><img src="img/web_first.png" alt="初級コース"></p>
+                        <p class="lineup-list-title">HTML/CSS/Bootstrap</p>
+                    </div>
+                    <div class="lineup-list">
+                        <p><img src="img/web_second.png" alt="初級コース"></p>
+                        <p class="lineup-list-title">HTML/CSS/JavaScript/jQuery</p>
+                    </div>
+                    <div class="lineup-list">
+                        <p><img src="img/web_third.png" alt="初級コース"></p>
+                        <p class="lineup-list-title">PHP/WordPress</p>
+                    </div>
                 </div>
-                <div class="lineup-list">
-                    <p><img src="img/web_second.png" alt="初級コース"></p>
-                    <p>TML/CSS/JavaScript/jQuery</p>
-                </div>
-                <div class="lineup-list">
-                    <p><img src="img/web_third.png" alt="初級コース"></p>
-                    <p>PHP/WordPress</p>
-                </div>
-            </div>
-        </section>
-        <section class="section-wrap">
-            <h2 class="section-title">お問い合わせ</h2>
+            </section>
+            <section class="section-wrap">
+                <h2 class="section-title">お問い合わせ</h2>
 
-            <div class="about-body">
-                <p>さあ今日から30日間を始めよう!</p>
-                <form action="/submit_form" method="post">
-                    <label for="email">メールアドレス：</label>
-                    <input type="email" id="email" name="email"><br>
-                </form>
+                <div class="about-body">
+                    <p>さあ今日から30日間を始めよう!</p>
+                    <form action="/submit_form" method="post">
+                        <label for="email">メールアドレス：</label>
+                        <input type="email" id="email" name="email"><br>
+                    </form>
+                </div>
+            </section>
+            <div class="main-button">
+                <a href="#">無料ではじめる</a>
             </div>
-        </section>
-        <div class="main-button">
-            <a href="#">無料ではじめる</a>
         </div>
     </div>
     <footer class="footer">

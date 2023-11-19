@@ -40,28 +40,6 @@ img {
     height: 300px; 
     /* object-fit: cover; */
 }
-/* ======＝＝＝
-・・・about
-=======＝＝＝ */
-.about-body{
-    width: 480px;
-}
-/* ======＝＝＝
-・・・lineup
-=======＝＝＝ */
-.lineup-body{
-    display: flex;
-    justify-content: space-between;
-}
-.lineup-list {
-    max-width: 280px;
-    background: #ccc;
-    border-radius: 5px;
-}
-.lineup-list-title{
-    font-size: 18px;
-    margin: auto;
-}
 
 /* ======＝＝＝
 ・・・ヘッダークラス
@@ -176,4 +154,74 @@ img {
     text-align: center;
     margin-bottom: 50px;
 }
+/* ======＝＝＝
+・・・about
+=======＝＝＝ */
+.about-body{
+    width: 480px;
+}
+/* ======＝＝＝
+・・・lineup
+=======＝＝＝ */
+.lineup-body{
+    display: flex;
+    justify-content: space-between;
+}
+.lineup-list {
+    max-width: 280px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.lineup-list-title{
+    font-size: 18px;
+    margin: auto;
+}
+/* お問い合わせセクションのスタイル調整 */
+.about-question {
+    text-align: center;
+}
 
+.about-question form {
+    display: inline-block; /* フォームをインラインブロックにする */
+}
+
+.about-question label, 
+.about-question input {
+    display: block; /* ラベルと入力フィールドをブロック要素にする */
+    margin: auto; /* 自動マージンで中央寄せ */
+}
+
+.about-question input {
+    margin-bottom: 20px; /* 入力フィールドの下に余白を追加 */
+    width: 80%; /* 入力フィールドの幅を調整 */
+}
+
+
+.main-button a {
+    display: inline-block;
+    background-color: #ef9067; /
+    color: #FFF; 
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 150px;
+
+}
+
+.main-button a:hover {
+    background-color: #0056b3; /* ホバー時の背景色 */
+}
+
+/* ======＝＝＝
+・・・footer
+=======＝＝＝ */
+.footer {
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-top: 1px solid rgb(145, 142, 139);
+}
+.copy {
+    text-align: right;
+    margin-top: 15px;
+    
+}

@@ -97,7 +97,7 @@ img {
 }
 
 .picture {
-    background-image: url('img/main-vsual-nontitle.png'); /* 画像の相対パスを指定 */
+    background-image: url('img/main-vsual-nontitle.png'); 
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
@@ -146,7 +146,7 @@ img {
 ・・・section共通
 =======＝＝＝ */
 .section-wrap{
-    margin: 70px 0 130px;
+    margin-top: 70px;
 }
 .section-title{
     font-size: 30px;
@@ -176,40 +176,45 @@ img {
     font-size: 18px;
     margin: auto;
 }
-/* お問い合わせセクションのスタイル調整 */
+/* ======＝＝＝
+・・・section共通
+=======＝＝＝ */
 .about-question {
     text-align: center;
 }
 
 .about-question form {
-    display: inline-block; /* フォームをインラインブロックにする */
+    display: inline-block; 
 }
 
 .about-question label, 
 .about-question input {
-    display: block; /* ラベルと入力フィールドをブロック要素にする */
-    margin: auto; /* 自動マージンで中央寄せ */
+    display: block; 
+    margin: auto; 
 }
 
 .about-question input {
-    margin-bottom: 20px; /* 入力フィールドの下に余白を追加 */
-    width: 80%; /* 入力フィールドの幅を調整 */
+    width: 60%; 
 }
-
+.form-item-input {
+    border-radius: 35px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
 
 .main-button a {
     display: inline-block;
-    background-color: #ef9067; /
-    color: #FFF; 
-    padding: 10px 40px;
+    background-color: rgb(245, 89, 89);
+    color: #fff;
+    padding: 10px 60px;
     border-radius: 5px;
-    text-align: center;
-    margin: 0 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 
 }
 
 .main-button a:hover {
-    background-color: #0056b3; /* ホバー時の背景色 */
+    background-color: #519ef0;
 }
 
 /* ======＝＝＝
@@ -223,5 +228,52 @@ img {
 .copy {
     text-align: right;
     margin-top: 15px;
-    
+}
+
+/* ======＝＝＝
+・・・レスポンシブ
+=======＝＝＝ */
+
+/* スマートフォン */
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column; 
+    }
+
+    .gnav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .gnav li {
+        margin-left: 0;
+        margin-bottom: 10px; /* ナビゲーション項目間のマージン */
+    }
+
+    /* 画像とテキストのレイアウト調整 */
+    .double-img img, .lineup-list img {
+        width: 100%; /* 画像の幅をフル幅に */
+        height: auto; /* アスペクト比を維持 */
+    }
+
+    /* about-body、lineup-listなどの幅調整 */
+    .about-body, .lineup-body, .about-question {
+        width: 100%;
+    }
+
+    /* フォーム要素の幅調整 */
+    .form-item-input, .main-button a {
+        width: 100%;
+        padding: 10px; /* パディングを調整 */
+    }
+
+    /* メインボタンのレイアウト調整 */
+    .main-button a {
+        margin: 20px 0;
+    }
+
+    /* フッターのスタイル調整 */
+    .footer {
+        padding: 20px 0;
+    }
 }
